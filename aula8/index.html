@@ -1,0 +1,63 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <form action="">
+        <label for="txtNome">Nome:</label>
+        <input id="txtNome" type="text">
+        <br><br>
+        <label for="txtSenha">Senha:</label>
+        <input id="txtSenha" type="password" placeholder="********">
+        <br><br>
+        <label for="txtData">Data:</label>
+        <input id="txtData" type="date" placeholder="birth">
+        <br><br>
+        <label for="txtNumero">Número:</label>
+        <input id="txtNumero" type="number" placeholder="número" min="0"  step="2"> <!-- max="1999" -->
+        <br><br>       
+
+        <fieldset>
+            <legend> Contato:</legend>
+            <br>
+            <label for="txtEmail">Email:</label>
+            <input id="txtEmail" type="email" placeholder="email@email.com" required>
+            <br><br>
+            <label for="txtSite">Site:</label>
+            <input id="txtSite" type="site" placeholder="http://www." required>
+            <br><br>
+        </fieldset>
+        <br>
+
+        <select>
+            <option>MG</option>
+            <option>SP</option>
+            <option>RJ</option>
+            <option>ES</option>
+        </select>
+        <br><br>
+
+        <label>Sexo:</label>
+        <input id="masc" type="radio" name="sexo" checked>
+        <label for="masc">Masculino</label>
+        <input id="fem" type="radio" name="sexo" checked>
+        <label for="fem">Feminino</label>
+        <br><br>
+
+        <label for="">Liguagens de programação que domino</label>
+        <br>
+        <input type="checkbox" id="c">
+        <label for="c">C</label>
+        <br>
+        <input type="checkbox" id="java">
+        <label for="java">Java</label>
+        <br>
+        <input type="checkbox" id="js">
+        <label for="js">JavaScript</label>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
