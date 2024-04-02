@@ -2,9 +2,53 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <title>Formulario</title>
+    <title>Cadastro de Clientes</title>
   </head>
   <body>
-    <form action=""></form>
+    <h1>Cadastro de Clientes</h1>
+    <p style="color: red">Todos os campos são de preenchimento obrigatório</p>
+    <form>
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="txtNome">Nome:</label><br>
+        <input type="text" id="txtNome" required>
+        <br><br>
+        <label for="dtNascimento">Data de Nascimento:</label><br>
+        <input type="date" id="dtNascimento" required>
+        <br><br>
+        <label>Sexo:</label>
+        <input type="radio" id="rMasculino" name="sexo" value="masculino" checked required>
+        <label for="rMasculino">Masculino</label>
+        <input type="radio" id="rFeminino" name="sexo" value="feminino" required>
+        <label for="rFeminino">Feminino</label><br>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Informações de Contato</legend>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required /><br>
+        <label for="telefone">Telefone Celular:</label><br>
+        <input type="tel" id="telefone" name="telefone" maxlength="9" required /><br>
+        <label for="website">Website Pessoal:</label>
+        <input type="url" id="website" name="website" required /><br>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Localização</legend>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required /><br />
+        <label for="numero">Número:</label>
+        <input type="number" id="numero" name="numero" min="1" max="9999" required
+        /><br />
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required /><br />
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+          <option value="AC">Acre</option></select><br />
+      </fieldset>
+      <br>
+      <button type="submit">Cadastrar</button>
+      <button type="reset">Limpar</button>
+    </form>
   </body>
 </html>
