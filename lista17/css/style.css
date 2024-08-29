@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+nav {
+  width: 100%;
+  background-color: darkblue;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+li {
+  margin: 10px 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ff4500;
+  text-decoration: underline;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+main section {
+  background-color: #e0dede;
+  max-width: 1200px;
+  padding: 50px;
+}
+
+main section:nth-of-type(odd) {
+  background-color: rgb(238, 238, 238);
+}
+
+main section:nth-of-type(even) {
+  background-color: white;
+}
+
+main section h1 {
+  font-size: 28px;
+}
+
+main section p {
+  margin: 20px 0px;
+  text-align: justify;
+}
+
+.destaque {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+main section button {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+main section button:hover {
+  background-color: orangered;
+}
+
+.btnPreto {
+  background-color: black;
+}
+
+.btnAzul {
+  background-color: rgb(2, 2, 200);
+}
+
+main section h2 {
+  margin: 20px 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container > div {
+  flex: 1 1 300px;
+  padding: 20px;
+}
+
+.servicos div {
+  text-align: center;
+}
+
+.servicos img {
+  width: 100%;
+}
+
+.servicos p {
+  text-align: justify;
+}
+
+.quemSomos div {
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+}
+
+footer > p {
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  main section {
+    padding: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  li {
+    margin: 5px 10px;
+  }
+}
